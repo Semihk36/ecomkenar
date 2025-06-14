@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecomkenar - Individuelle Lösungen für kleine Betriebe</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        .accent-green {
+            color: #10b981;
+        }
+        .accent-orange {
+            color: #f59e0b;
+        }
+        .bg-accent-green {
+            background-color: #10b981;
+        }
+        .bg-accent-orange {
+            background-color: #f59e0b;
+        }
+        .speech-bubble {
+            position: relative;
+            background: #f8fafc;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #ef4444;
+        }
+        .speech-bubble:before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: -8px;
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-right-color: #ef4444;
+        }
+        .problem-section {
+            background: linear-gradient(135deg, #fee2e2 0%, #fef3c7 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <span class="inline-flex items-center justify-center w-3 h-3 bg-green-400 rounded-full mr-2"></span>
+                <span class="text-lg font-medium">ecomkenar - Startbereich</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Mehr Kunden. Die richtigen Mitarbeiter.<br>
+                <span class="text-yellow-300">Keine starren Agenturpreise.</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
+                Individuelle Lösungen für kleine Betriebe – ohne Risiko, ohne Technikstress.
+            </p>
+            <div class="flex justify-center">
+                <div class="bg-white bg-opacity-20 rounded-full px-8 py-4 backdrop-blur-sm">
+                    <i class="fas fa-handshake text-2xl mr-3"></i>
+                    <span class="text-lg font-medium">Persönlich. Individuell. Transparent.</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-toolbox text-3xl accent-orange mr-3"></i>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Was wir anbieten – Ihre Vorteile im Überblick</h2>
+                </div>
+            </div>
+
+            <!-- Service 1: Customer Acquisition -->
+            <div class="mb-16">
+                <div class="bg-green-50 rounded-2xl p-8 card-shadow feature-card">
+                    <div class="flex items-start mb-6">
+                        <div class="bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">1. Kundenanfragen, die wirklich zu Ihnen passen</h3>
+                            <p class="text-lg text-gray-600 mb-4">
+                                Sie brauchen keine tausend Likes – sondern Kunden, die buchen, kaufen oder vorbeikommen.
+                                Ich entwickle mit Ihnen gemeinsam einen Weg, um genau diese Menschen zu erreichen.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-white rounded-lg p-6">
+                            <i class="fas fa-map-marker-alt text-green-500 text-xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Gezielte Sichtbarkeit in Ihrer Umgebung</h4>
+                            <p class="text-gray-600 text-sm">z. B. über Suchsysteme, Empfehlungstools, einfache Social-Media-Präsenz – ohne „Werbesprech"</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-6">
+                            <i class="fas fa-robot text-green-500 text-xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Automatisierte Kontaktaufnahme</h4>
+                            <p class="text-gray-600 text-sm">Auf Wunsch: per WhatsApp, SMS oder E-Mail</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 mb-4">
+                        <i class="fas fa-cog text-green-500 text-xl mb-3"></i>
+                        <h4 class="font-semibold mb-2">Alles ist für Ihren Betrieb angepasst, keine Massenlösung</h4>
+                    </div>
+                    
+                    <div class="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-flask text-blue-500 mr-3"></i>
+                            <span class="font-semibold text-blue-800">Testphase möglich: Erst messen, dann entscheiden.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2: Employee Search -->
+            <div class="mb-16">
+                <div class="bg-blue-50 rounded-2xl p-8 card-shadow feature-card">
+                    <div class="flex items-start mb-6">
+                        <div class="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">2. Unterstützung bei der Mitarbeitersuche – unkompliziert & ehrlich</h3>
+                            <p class="text-lg text-gray-600 mb-4">
+                                Sie suchen Leute – aber keine Zeit für komplizierte Stellenausschreibungen oder Bewerbungsportale?
+                                Ich helfe Ihnen, Bewerber zu finden, die auch wirklich zu Ihnen passen.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-6">
+                        <div class="bg-white rounded-lg p-6">
+                            <i class="fas fa-bullseye text-blue-500 text-xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Zielgerichtete Reichweite</h4>
+                            <p class="text-gray-600 text-sm">für Ihre offenen Stellen</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-6">
+                            <i class="fas fa-filter text-blue-500 text-xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Vorauswahl auf Wunsch</h4>
+                            <p class="text-gray-600 text-sm">Nur wirklich Interessierte melden sich</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-6">
+                            <i class="fas fa-handshake text-blue-500 text-xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Persönliche Absprache</h4>
+                            <p class="text-gray-600 text-sm">kein Standardformular</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-lightbulb text-yellow-500 mr-3"></i>
+                            <span class="font-semibold text-yellow-800">Kostentransparenz statt Agenturverträge</span>
+                        </div>
+                        <p class="text-yellow-700 mt-2 text-sm">Ich arbeite auf Wunsch mit überschaubaren Pauschalen oder Projektbudget – keine langfristige Bindung, keine versteckten Kosten.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-16 problem-section">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="flex items-center justify-center mb-6">
+                    <i class="fas fa-phone-slash text-4xl text-red-500 mr-4"></i>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Kennen Sie diese Situation?</h2>
+                </div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ihre Kunden versuchen Sie zu erreichen, aber hören stattdessen immer wieder diese frustrierenden Nachrichten:
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-1 gap-6 mb-8">
+                    <div class="speech-bubble">
+                        <div class="flex items-start">
+                            <i class="fas fa-exclamation-triangle text-red-500 text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <p class="text-lg font-medium text-gray-800 mb-2">
+                                    "Leider können wir Ihren Anruf derzeit nicht entgegennehmen..."
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    → Während Sie im Kundentermin sind, verlieren Sie potenzielle Aufträge
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="speech-bubble">
+                        <div class="flex items-start">
+                            <i class="fas fa-user-md text-red-500 text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <p class="text-lg font-medium text-gray-800 mb-2">
+                                    "Krankheitsbedingt können wir heute keine Anrufe entgegennehmen..."
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    → Ein kranker Mitarbeiter bedeutet automatisch Umsatzverlust
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="speech-bubble">
+                        <div class="flex items-start">
+                            <i class="fas fa-door-closed text-red-500 text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <p class="text-lg font-medium text-gray-800 mb-2">
+                                    "Aus personellen Gründen bleibt unser Betrieb heute geschlossen..."
+                                </p>
+                                <p class="text-sm text-gray-600">
+                                    → Kunden suchen sich Alternativen, statt zu warten
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 card-shadow text-center">
+                    <i class="fas fa-chart-line-down text-4xl text-red-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Das Ergebnis?</h3>
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div class="bg-red-50 rounded-lg p-4">
+                            <i class="fas fa-phone-times text-red-500 text-2xl mb-2"></i>
+                            <p class="font-semibold text-red-700">Verpasste Anrufe</p>
+                            <p class="text-sm text-gray-600">= Verlorene Kunden</p>
+                        </div>
+                        <div class="bg-red-50 rounded-lg p-4">
+                            <i class="fas fa-users-slash text-red-500 text-2xl mb-2"></i>
+                            <p class="font-semibold text-red-700">Frustrierte Interessenten</p>
+                            <p class="text-sm text-gray-600">= Schlechte Reputation</p>
+                        </div>
+                        <div class="bg-red-50 rounded-lg p-4">
+                            <i class="fas fa-arrow-trend-down text-red-500 text-2xl mb-2"></i>
+                            <p class="font-semibold text-red-700">Weniger Umsatz</p>
+                            <p class="text-sm text-gray-600">= Verpasste Chancen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <div class="bg-white bg-opacity-80 rounded-2xl p-8 max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                        <i class="fas fa-lightbulb text-yellow-500 mr-3"></i>
+                        Aber es gibt eine Lösung!
+                    </h3>
+                    <p class="text-lg text-gray-600">
+                        Stellen Sie sich vor, Ihre Kunden erreichen <strong>immer</strong> einen freundlichen, kompetenten Ansprechpartner – 
+                        auch wenn Sie gerade nicht da sind...
+                    </p>
+                    <div class="mt-6">
+                        <div class="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full">
+                            <i class="fas fa-arrow-down mr-2"></i>
+                            <span class="font-semibold">Die Lösung finden Sie direkt hier ⬇️</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Continue with Services -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- Service 3: AI Phone Assistant -->
+            <div class="mb-16">
+                <div class="bg-purple-50 rounded-2xl p-8 card-shadow feature-card">
+                    <div class="flex items-start mb-6">
+                        <div class="bg-purple-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">3. KI-Telefonassistent: Nie wieder einen Anruf verpassen</h3>
+                            <p class="text-lg text-gray-600 mb-4">
+                                Ein intelligenter Telefonassistent übernimmt Gespräche für Sie – auch nach Feierabend.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-green-50 rounded-lg p-6 mb-6 border-l-4 border-green-400">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-magic text-green-500 text-2xl mr-3"></i>
+                            <h4 class="font-bold text-green-800 text-lg">Statt frustrierender Nachrichten hören Ihre Kunden:</h4>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 border-l-4 border-green-500">
+                            <p class="text-gray-800 font-medium italic">
+                                "Guten Tag! Hier ist der Assistent von ecomkenar. Gerne helfe ich Ihnen weiter oder 
+                                vereinbare einen Termin für Sie. Wie kann ich Ihnen behilflich sein?"
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-white rounded-lg p-6">
+                            <i class="fas fa-phone text-purple-500 text-xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Nimmt Anrufe an, begrüßt Ihre Kunden</h4>
+                            <p class="text-gray-600 text-sm">Professionell und mit Ihrem Firmennamen</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-6">
+                            <i class="fas fa-calendar text-purple-500 text-xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Kann Termine vergeben oder Fragen beantworten</h4>
+                            <p class="text-gray-600 text-sm">Direkt in Ihren Kalender integriert</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-6">
+                            <i class="fas fa-users text-purple-500 text-xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Entlastet Ihr Team bei Routineanfragen</h4>
+                            <p class="text-gray-600 text-sm">Mehr Zeit für wichtige Aufgaben</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-6">
+                            <i class="fas fa-user-cog text-purple-500 text-xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Individuell auf Ihren Betrieb abgestimmt</h4>
+                            <p class="text-gray-600 text-sm">Kennt Ihre Preise, Leistungen und Termine</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt text-green-500 mr-3"></i>
+                            <span class="font-semibold text-green-800">Test möglich – direkt im Livebetrieb mit echten Anrufen.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Makes the Difference -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-puzzle-piece text-3xl accent-orange mr-3"></i>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Was macht den Unterschied?</h2>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg p-6 text-center card-shadow feature-card">
+                    <i class="fas fa-comments text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Kein Agentur-Blabla</h3>
+                    <p class="text-gray-600">sondern persönliche Zusammenarbeit</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center card-shadow feature-card">
+                    <i class="fas fa-euro-sign text-4xl text-green-500 mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Keine starren Preise</h3>
+                    <p class="text-gray-600">sondern faire Vereinbarungen – je nach Projektgröße</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center card-shadow feature-card">
+                    <i class="fas fa-tools text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Keine komplexen Tools</h3>
+                    <p class="text-gray-600">die Sie nicht verstehen – Sie brauchen keine Vorkenntnisse</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center card-shadow feature-card">
+                    <i class="fas fa-vial text-4xl text-orange-500 mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Alles ist testbar</h3>
+                    <p class="text-gray-600">und individuell – ob 1 Woche oder dauerhaft</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="flex items-center justify-center mb-4">
+                    <span class="inline-flex items-center justify-center w-3 h-3 bg-orange-400 rounded-full mr-2"></span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">So läuft es ab (Beispiel-Ablauf)</h2>
+                </div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Process Steps -->
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mr-6 text-xl font-bold flex-shrink-0">1</div>
+                            <div class="bg-blue-50 rounded-lg p-6 flex-1">
+                                <h3 class="text-xl font-bold mb-2">Unverbindliches Gespräch (10–15 Minuten)</h3>
+                                <p class="text-gray-600">Sie erzählen, was Sie gerade brauchen – ich höre zu und mache Vorschläge.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mr-6 text-xl font-bold flex-shrink-0">2</div>
+                            <div class="bg-green-50 rounded-lg p-6 flex-1">
+                                <h3 class="text-xl font-bold mb-2">Individuelles Konzept</h3>
+                                <p class="text-gray-600">Ich erkläre, was möglich ist, wie es ablaufen könnte und was es (maximal) kostet.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-purple-500 text-white rounded-full w-16 h-16 flex items-center justify-center mr-6 text-xl font-bold flex-shrink-0">3</div>
+                            <div class="bg-purple-50 rounded-lg p-6 flex-1">
+                                <h3 class="text-xl font-bold mb-2">Start mit Testlauf oder direkter Umsetzung</h3>
+                                <p class="text-gray-600">Auf Wunsch auch mit kurzer Testphase, um alles zu prüfen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <span class="inline-flex items-center justify-center w-3 h-3 bg-green-400 rounded-full mr-2"></span>
+                <span class="text-lg font-medium">Jetzt starten – ohne Risiko</span>
+            </div>
+            <h2 class="text-3xl md:text-5xl font-bold mb-8">
+                Schreiben Sie mir direkt – oder sichern Sie sich einen kostenlosen Rückruf.
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Ich melde mich persönlich. Kein Callcenter. Kein Verkäufer.
+            </p>
+            
+            <div class="flex flex-col md:flex-row gap-6 justify-center max-w-2xl mx-auto mb-8">
+                <div class="bg-white bg-opacity-20 rounded-lg p-6 backdrop-blur-sm flex-1">
+                    <i class="fas fa-envelope text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Direkt schreiben</h3>
+                    <p class="text-sm opacity-90 mb-4">Schildern Sie Ihre Situation in einer kurzen Nachricht</p>
+                    <a href="mailto:kenar76@web.de" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Nachricht senden
+                    </a>
+                </div>
+                
+                <div class="bg-white bg-opacity-20 rounded-lg p-6 backdrop-blur-sm flex-1">
+                    <i class="fas fa-phone text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Direkt anrufen</h3>
+                    <p class="text-sm opacity-90 mb-4">Sprechen Sie direkt mit mir über Ihre Anforderungen</p>
+                    <a href="tel:+4901727226108" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        <i class="fas fa-phone mr-2"></i>
+                        0172 722 6108
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info Box -->
+            <div class="bg-white bg-opacity-10 rounded-2xl p-8 max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="text-center">
+                        <div class="bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-phone text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Telefon</h3>
+                        <a href="tel:+4901727226108" class="text-xl font-mono hover:text-yellow-300 transition-colors">
+                            0172 722 6108
+                        </a>
+                        <p class="text-sm opacity-90 mt-2">Persönlicher Kontakt, kein Callcenter</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">E-Mail</h3>
+                        <a href="mailto:kenar76@web.de" class="text-xl font-mono hover:text-yellow-300 transition-colors">
+                            kenar76@web.de
+                        </a>
+                        <p class="text-sm opacity-90 mt-2">Schnelle Antwort garantiert</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-shield-alt text-2xl mr-3"></i>
+                    <span class="font-semibold text-lg">Ihre Vorteile auf einen Blick:</span>
+                </div>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        <span>Unverbindliches Erstgespräch</span>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        <span>Faire, transparente Preise</span>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        <span>Testphasen möglich</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4">
+                <h3 class="text-xl font-bold mb-2">ecomkenar</h3>
+                <p class="text-gray-400 mb-4">Individuelle Business-Lösungen für kleine Betriebe</p>
+                <div class="flex justify-center space-x-8">
+                    <a href="tel:+4901727226108" class="flex items-center text-gray-300 hover:text-white transition-colors">
+                        <i class="fas fa-phone mr-2"></i>
+                        0172 722 6108
+                    </a>
+                    <a href="mailto:kenar76@web.de" class="flex items-center text-gray-300 hover:text-white transition-colors">
+                        <i class="fas fa-envelope mr-2"></i>
+                        kenar76@web.de
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-4">
+                <p class="text-gray-400 text-sm">
+                    © 2024 ecomkenar. Persönlich. Transparent. Erfolgreich.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDjx3D78gqsTrHRiCclqFR1Nw4Lq4qAQKIXKXPTBl8eqC1cyCgx4ALYKnV9%2BuBDAwbfRi7Fa06%2BBL8XialjEidRaZ5L%2F%2FXFBdDVsTH4ZeBENPvnsOIy3JNjB9VgnwiKVLdHTu7zCRbReq5gAZ3rV%2BICX4J3Rf3Ttu9Ik4ZZu3lizj45mRRtQ0WThkEHKKgMzfgEEqhy1k%2FXyeFpmE3epkBuvb4%2FeTu5sen%2F2iFdI2h0rTC3IWeSNUCXzJVpr4EEjdjQ1epvH%2Bup6fS6BKmiSkL9hYC53NDGcfC7xKjACGZOp89zxhP4e3VE233RePw3Cd7unIerjqFT%2B53o0hYV8GEksBBQLzBPUZYi5euhyjtnb7vDm%2FhL%2B5nUcNQzKOJA1is6lMUeSPmA0VHbiPRcLOWE%2FYqLL3Ui1PLWQefzzkr%2F2NdRdtclakLe7V%2FkxQ9JINYdvWu0l1icRjPstFwrZzvFUCa82MkRr9OdRIvlYRy8yEHRmCSgmu8%2BNoRp9mV3JYaD2s%2B2Io0pDbPO7XtSo5184%3D";
+        window.__genspark_locale = "de-DE";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDjx3D78gqsTrHRiCclqFR1Nw4Lq4qAQKIXKXPTBl8eqC1cyCgx4ALYKnV9+uBDAwbfRi7Fa06+BL8XialjEidRaZ5L//XFBdDVsTH4ZeBENPvnsOIy3JNjB9VgnwiKVLdHTu7zCRbReq5gAZ3rV+ICX4J3Rf3Ttu9Ik4ZZu3lizj45mRRtQ0WThkEHKKgMzfgEEqhy1k/XyeFpmE3epkBuvb4/eTu5sen/2iFdI2h0rTC3IWeSNUCXzJVpr4EEjdjQ1epvH+up6fS6BKmiSkL9hYC53NDGcfC7xKjACGZOp89zxhP4e3VE233RePw3Cd7unIerjqFT+53o0hYV8GEksBBQLzBPUZYi5euhyjtnb7vDm/hL+5nUcNQzKOJA1is6lMUeSPmA0VHbiPRcLOWE/YqLL3Ui1PLWQefzzkr/2NdRdtclakLe7V/kxQ9JINYdvWu0l1icRjPstFwrZzvFUCa82MkRr9OdRIvlYRy8yEHRmCSgmu8+NoRp9mV3JYaD2s+2Io0pDbPO7XtSo5184=";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
